@@ -1,4 +1,4 @@
-## Task 6: Hypothesis Testing Notes
+## Hypothesis Testing Notes
 
 ## Metric Being Tested
 
@@ -63,11 +63,11 @@ If there is no significant difference, there is not enough evidence to recommend
 
 The result of this test will help determine whether the company should launch the new onboarding campaign to all users. The final decision will also consider guardrail metrics such as refund rate, support ticket rate, engagement score, and days to convert.
 
-## Task 7: Hypothesis Test Results
+## ## Hypothesis Test Results
 
-## Test Inputs
+### Test Inputs
 
-To compare the performance of the Control and Treatment groups, a Pivot Table was created using the experiment_group and converted_to_paid fields.
+To compare the performance of the Control and Treatment groups, a Pivot Table was created using the **experiment_group** and **converted_to_paid** fields.
 
 | Experiment Group | User Count | Converted Users |
 | ---------------- | ---------- | --------------- |
@@ -76,7 +76,7 @@ To compare the performance of the Control and Treatment groups, a Pivot Table wa
 
 The Paid Conversion Rate was calculated as:
 
-Paid Conversion Rate = Converted Users / Total Users
+**Paid Conversion Rate = Converted Users / Total Users**
 
 | Experiment Group | Paid Conversion Rate |
 | ---------------- | -------------------- |
@@ -85,24 +85,24 @@ Paid Conversion Rate = Converted Users / Total Users
 
 ---
 
-## Test Output
+### Test Output
 
 A two-proportion A/B test was performed to compare the Paid Conversion Rates of the Control and Treatment groups.
 
-**P-value = 0.0017**
+**P-value = 0.0006**
 
 ---
 
-## Decision Rule
+### Decision Rule
 
 * If the p-value is less than 0.05, reject the null hypothesis.
 * If the p-value is greater than or equal to 0.05, fail to reject the null hypothesis.
 
 ---
 
-## Result
+### Result
 
-The p-value (0.0017) is less than the significance level of 0.05.
+The p-value (0.0006) is less than the significance level of 0.05.
 
 Therefore, the null hypothesis is rejected.
 
@@ -110,7 +110,7 @@ This means there is statistical evidence that the Treatment group performed bett
 
 ---
 
-## Business Interpretation
+### Business Interpretation
 
 The Treatment group achieved a Paid Conversion Rate of 6.99%, while the Control group achieved a Paid Conversion Rate of 3.17%.
 
@@ -119,7 +119,7 @@ The results suggest that the new onboarding campaign was more effective at conve
 However, before making a final rollout decision, guardrail metrics such as refund rate, support ticket rate, engagement score, and days to convert should also be reviewed to ensure there are no negative impacts on user experience.
 
 
-## Task-8: Guardrail Metrics Evaluation
+##  Guardrail Metrics Evaluation
 
 Although the Treatment group showed a higher Paid Conversion Rate, the decision should not be based only on conversion improvement. Additional guardrail metrics were reviewed to identify any potential risks.
 
